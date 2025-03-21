@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Welcome to My Blog",
+        "content": "This is my first post in my static blog!"
+    },
+    {
+        "title": "Why I Chose a Static Blog",
+        "content": "Static blogs are fast, secure, and easy to maintain."
+    }
+]
