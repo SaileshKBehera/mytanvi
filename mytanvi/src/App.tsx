@@ -1,7 +1,23 @@
-export default function App() {
+import { useState } from "react";
+import styles from "./styles/App.module.css";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Cards from "./components/Cards";
+
+const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">Hello, Tailwind CSS!</h1>
+    <div className={styles.container}>
+      <Navbar toggleSidebar={() => setIsOpen(!isOpen)} />
+      <Sidebar isOpen={isOpen} />
+      <main className={styles.content}>
+       
+        <Cards></Cards>
+      
+      </main>
     </div>
   );
-}
+};
+
+export default App;

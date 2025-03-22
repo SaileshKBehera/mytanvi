@@ -1,0 +1,42 @@
+* {
+  font-family: "Arial", sans-serif; /* Change to your preferred font */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 200px; /* Adjust based on sidebar width */
+  }
+  .style1
+  {
+    background: #2BA36C;
+  }
+  .style1
+  {
+    background: #2BA36C;
+  }
+  .style2
+  {
+    background: #F3D408;
+  }
+  .style3
+  {
+    background: #C9D5FD;
+  }
+  .style4
+  {
+    background: #5061C5;
+  }
+  .style5
+  {
+    background: #271B80;
+  }
+  .style6
+  {
+    background: #3D853D;
+  }

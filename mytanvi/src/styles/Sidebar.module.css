@@ -1,0 +1,31 @@
+.sidebar {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: #444;
+    color: white;
+    transition: left 0.3s;
+    padding-top: 60px;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  

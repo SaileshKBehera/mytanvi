@@ -1,0 +1,42 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr; /* Ensures all cards have the same height */
+    gap: 16px;
+    padding: 16px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:nth-child(odd) {
+    transform: translateY(10px);
+  }
+  
+  .card:nth-child(even) {
+    transform: translateY(-10px);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .cardContent {
+    flex-grow: 1; /* Pushes content to fill space */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content evenly */
+  }
+  
