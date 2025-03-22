@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Tailwind Site</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS via CDN -->
+    <link rel="icon" href="favicon.ico">
 </head>
-<body>
-    <header>
-        <h1>My Blog</h1>
-    </header>
-    <main id="posts"></main>
-    <script src="script.js"></script>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">MyWebsite</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20">
+        <h2 class="text-4xl font-bold text-blue-600">Welcome to My Tailwind CSS Page</h2>
+        <p class="text-gray-700 mt-4">This is a simple static website using Tailwind CSS.</p>
+        <button class="mt-5 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
+            Get Started
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
